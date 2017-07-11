@@ -12,9 +12,11 @@ Pull the latest version from the Docker registry:
 
 To build the image from source:
 
-`$ git clone https://github.com/coroin/node.git`
-`$ cd node`
-`$ sudo docker build -t="coroin/node" .`
+```
+$ git clone https://github.com/coroin/node.git
+$ cd node
+$ sudo docker build -t="coroin/node" .
+```
 
 ### Usage Examples
 
