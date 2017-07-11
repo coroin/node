@@ -6,19 +6,15 @@ A minimal install of [nodejs](https://nodejs.org) used to run `npm` commands.
 
 Pull the latest version from the Docker registry:
 
-```bash
-$ docker pull coroin/node
-```
+`$ docker pull coroin/node`
 
 ### Build
 
 To build the image from source:
 
-```bash
-$ git clone https://github.com/coroin/node.git
-$ cd node
-$ sudo docker build -t="coroin/node" .
-```
+`$ git clone https://github.com/coroin/node.git`
+`$ cd node`
+`$ sudo docker build -t="coroin/node" .`
 
 ### Usage Examples
 
@@ -26,12 +22,8 @@ The following examples run `npm` commands against a [laravel](https://laravel.co
 
 Install packages:
 
-```bash
-$ sudo docker run --rm -w /var/www/html node npm install
-```
+`$ sudo docker run --rm -w /var/www/html node npm install`
 
 Compile assets for production:
 
-```bash
-$ sudo docker run --rm -w /var/www/html node npm run production
-```
+`$ sudo docker run --rm -w /var/www/html node npm run production`
