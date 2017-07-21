@@ -17,7 +17,7 @@ To build the image from source:
 ```
 $ git clone https://github.com/coroin/npm.git
 $ cd npm
-$ sudo docker build -t="coroin/npm" .
+$ sudo docker build -t coroin/npm .
 ```
 
 ### Usage Examples
@@ -27,11 +27,11 @@ The following examples run `npm` commands against a [laravel](https://laravel.co
 Install packages:
 
 ```
-$ sudo docker run --rm -w /var/www/html install
+$ sudo docker run --rm -w /var/www/html coroin/npm install
 ```
 
 Compile assets for production:
 
 ```
-$ sudo docker run --rm -w /var/www/html run production
+$ sudo docker run --rm -w /var/www/html coroin/npm run production
 ```
